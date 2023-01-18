@@ -8,7 +8,9 @@
     "kind": "plugin",
     "displayName": "Slug"
   },
-  "dependencies": {},
+  "dependencies": {
+    "styled-components": "^5.3.6"
+  },
   "peerDependencies": {
     "@strapi/strapi": "4.4.0"
   },
