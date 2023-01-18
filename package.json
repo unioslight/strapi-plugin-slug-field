@@ -1,0 +1,28 @@
+{
+  "name": "strapi-plugin-slug-field",
+  "version": "0.0.1",
+  "description": "A custom field for generating slug from a target field.",
+  "strapi": {
+    "name": "slug",
+    "description": "Generate slug from a target field",
+    "kind": "plugin",
+    "displayName": "Slug"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@strapi/strapi": "4.4.0"
+  },
+  "author": {
+    "name": "khang-nd"
+  },
+  "maintainers": [
+    {
+      "name": "khang-nd"
+    }
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
