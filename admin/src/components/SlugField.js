@@ -32,7 +32,7 @@ const SlugField = ({
   }
 
   function handleChange(e) {
-    e.target.value && setValue(e.target.value);
+    setValue(e.target.value || "");
   }
 
   function handleBlur() {
