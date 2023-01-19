@@ -4,7 +4,7 @@ A custom field for generating slug from a target field.
 
 A __`UID`__ alternative _without_ the unique constraint - suitable for slugs shared between locales.
 
-![Strapi-plugin-slug-field](./image.jpg)
+![Strapi-plugin-slug-field](/image.jpg)
 
 ## Installation
 
@@ -12,12 +12,13 @@ To install this plugin, you need to add an NPM dependency to your Strapi applica
 
 ```sh
 # Using Yarn
-yarn add @strapi/plugin-color-picker
+yarn add strapi-plugin-slug-field
 
 # Or using NPM
-npm install @strapi/plugin-color-picker
-Then, you'll need to build your admin panel:
+npm install strapi-plugin-slug-field
 ```
+
+Then, you'll need to build your admin panel:
 
 ```sh
 # Using Yarn
