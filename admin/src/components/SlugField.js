@@ -1,7 +1,7 @@
 import { TextInput } from "@strapi/design-system/TextInput";
 import { useCMEditViewDataManager } from "@strapi/helper-plugin";
 import { nameToSlug } from "@strapi/utils";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import GenerateButton from "./GenerateButton";
 
 const SlugField = ({
@@ -13,10 +13,14 @@ const SlugField = ({
   labelAction,
   name,
   value: initialValue,
+  onChange,
   required,
 }) => {
   const { modifiedData, initialData } = useCMEditViewDataManager();
   const [value, setValue] = useState(initialValue);
+  useEffect(() => {
+    onChange({ target: { name, value, type: "string" } });
+  }, [value]);
 
   const label = intlLabel.id ? intlLabel.defaultMessage : name;
   const hint = description?.id ? description.defaultMessage : "";
@@ -27,8 +31,8 @@ const SlugField = ({
     targetData && setValue(nameToSlug(targetData));
   }
 
-  function handleChange({ target }) {
-    target.value && setValue(target.value);
+  function handleChange(e) {
+    e.target.value && setValue(e.target.value);
   }
 
   function handleBlur() {
