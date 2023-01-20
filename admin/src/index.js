@@ -11,6 +11,7 @@ export default {
   register(app) {
     app.customFields.register({
       name,
+      pluginId,
       type: "string",
       icon: SlugFieldIcon,
       intlLabel: {

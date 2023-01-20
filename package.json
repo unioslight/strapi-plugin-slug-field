@@ -1,13 +1,18 @@
 {
   "name": "strapi-plugin-slug-field",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A custom field for generating slug from a target field.",
   "strapi": {
     "name": "slug",
-    "description": "Generate slug from a target field",
+    "description": "A custom field for generating slug from a target field",
     "kind": "plugin",
     "displayName": "Slug"
   },
+  "keywords": [
+    "strapi",
+    "strapi-plugins",
+    "strapi-custom-field"
+  ],
   "dependencies": {
     "styled-components": "^5.3.6"
   },
