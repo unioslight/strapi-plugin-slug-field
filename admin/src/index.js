@@ -1,26 +1,23 @@
 import { prefixPluginTranslations } from "@strapi/helper-plugin";
 import * as yup from "yup";
-import pluginPkg from "../../package.json";
+import pkg from "../../package.json";
 import SlugFieldIcon from "./components/SlugFieldIcon";
 import pluginId from "./pluginId";
 import getTrad from "./utils/getTrad";
 
-const { name, displayName, description } = pluginPkg.strapi;
-
 export default {
   register(app) {
     app.customFields.register({
-      name,
-      pluginId,
+      name: pkg.strapi.name,
       type: "string",
       icon: SlugFieldIcon,
       intlLabel: {
         id: getTrad("label"),
-        defaultMessage: displayName,
+        defaultMessage: "Slug",
       },
       intlDescription: {
         id: getTrad("description"),
-        defaultMessage: description,
+        defaultMessage: "Generate slug from a target field",
       },
       components: {
         Input: async () => await import("./components/SlugField"),
