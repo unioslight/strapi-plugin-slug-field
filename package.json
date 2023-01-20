@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-slug-field",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A custom field for generating slug from a target field.",
   "strapi": {
     "name": "slug",
