@@ -13,9 +13,7 @@
     "strapi-plugins",
     "strapi-custom-field"
   ],
-  "dependencies": {
-    "styled-components": "^5.3.6"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@strapi/strapi": "^4.4.0"
   },
